@@ -124,7 +124,7 @@ const menuItems = [
             <div className="flex flex-col gap-2" 
             key={menuItem.title}
             > 
-              <span className="hidden lg:block text-gray-400 font-light my-4">{menuItem.title}</span>
+              <span className="hidden lg:block text-gray-400 font-light my-3">{menuItem.title}</span>
               {menuItem.items.map(item => (
                 <Link 
                 href={item.href} 
