@@ -1,3 +1,8 @@
+"use client"
+
+import Announcements from '@/components/Announcements'
+import BigCalendar from '@/components/BigCalendar'
+import EventCalendar from '@/components/EventCalendar'
 import React from 'react'
 
 export default function StudentPage() {
@@ -6,12 +11,14 @@ export default function StudentPage() {
       {/*LEFT*/}
       <div className='w-full xl:w-2/3'>
          <div className='h-full bg-white p-4 rounded-md'>
-            <h2>Schedule (4A)</h2>
+            <h2 className='text-xl font-semibold'>Schedule (4A)</h2>
+            <BigCalendar/>
          </div>
       </div>
       {/*RIGHT*/}
         <div className='w-full xl:w-1/3'>
-
+          <EventCalendar/>
+          <Announcements/>
         </div>
     </div>
   )
