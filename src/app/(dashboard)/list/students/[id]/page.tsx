@@ -129,11 +129,12 @@ export default function SingleStudent() {
                     Shortcuts
                 </h3>
                 <div className='mt-4 flex gap-4 flex-wrap text-xs text-gray-500'>
-                    <Link className='p-3 rounded-md bg-permanentLight' href={"/"}>Student&apos;s Classes</Link>
-                    <Link className='p-3 rounded-md bg-secondaryLight' href={"/"}>Student&apos;s Students</Link>
-                    <Link className='p-3 rounded-md bg-thirdLight' href={"/"}>Student&apos;s Lessons</Link>
+                    <Link className='p-3 rounded-md bg-permanentLight' href={"/"}>Student&apos;s Lessons</Link>
+                    <Link className='p-3 rounded-md bg-secondaryLight' href={"/"}>Student&apos;s Teachers</Link>
+                    
                     <Link className='p-3 rounded-md bg-pink-50' href={"/"}>Student&apos;s Exams</Link>
                     <Link className='p-3 rounded-md bg-permanentLight' href={"/"}>Student&apos;s Assignments</Link>
+                    <Link className='p-3 rounded-md bg-thirdLight' href={"/"}>Student&apos;s Results</Link>
                 </div>
             </div>
             <Performance/>
