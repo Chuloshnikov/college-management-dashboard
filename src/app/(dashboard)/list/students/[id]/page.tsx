@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-export default function SingleTeacher() {
+export default function SingleStudent() {
   return (
     <div className='flex-1 p-4 flex gap-4 flex-col xl:flex-row'>
         {/* LEFT */}
@@ -16,7 +16,7 @@ export default function SingleTeacher() {
                 <div className='bg-permanent py-6 px-4 rounded-md flex-1 flex gap-4'>
                     <div className='w-1/3'>
                         <Image 
-                        src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                        src="https://images.pexels.com/photos/5414817/pexels-photo-5414817.jpeg?auto=compress&cs=tinysrgb&w=1200" 
                         alt="photo" 
                         width={144} 
                         height={144} 
@@ -24,7 +24,7 @@ export default function SingleTeacher() {
                         />
                     </div>
                     <div className='w-2/3 flex flex-col justify-between gap-4'>
-                        <h2 className='text-xl font-semibold'>Leonard Snyder</h2>
+                        <h2 className='text-xl font-semibold'>Cameron Dias</h2>
                         <p className='text-sm text-gray-500'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         </p>
@@ -76,9 +76,9 @@ export default function SingleTeacher() {
                         className='w-6 h-6'
                         />
                         <div className=''>
-                            <h3 className='text-xl font-semibold'>2</h3>
+                            <h3 className='text-xl font-semibold'>6th</h3>
                             <span className='text-sm text-gray-400'>
-                            Branches
+                            Grade
                             </span>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ export default function SingleTeacher() {
                         className='w-6 h-6'
                         />
                         <div className=''>
-                            <h3 className='text-xl font-semibold'>6</h3>
+                            <h3 className='text-xl font-semibold'>18</h3>
                             <span className='text-sm text-gray-400'>
                                 Lessons
                             </span>
@@ -108,9 +108,9 @@ export default function SingleTeacher() {
                         className='w-6 h-6'
                         />
                         <div className=''>
-                            <h3 className='text-xl font-semibold'>6</h3>
+                            <h3 className='text-xl font-semibold'>6A</h3>
                             <span className='text-sm text-gray-400'>
-                                Classes
+                                Class
                             </span>
                         </div>
                     </div>
@@ -118,7 +118,7 @@ export default function SingleTeacher() {
             </div>
             {/*BOTTOM*/}
             <div className='mt-4 bg-white rounded-md p-4 h-[800px]'>
-                <h3>Teacher&apos;s Schedule</h3>
+                <h3>Student&apos;s Schedule</h3>
                 <BigCalendar/>
             </div>
         </div>
@@ -129,11 +129,11 @@ export default function SingleTeacher() {
                     Shortcuts
                 </h3>
                 <div className='mt-4 flex gap-4 flex-wrap text-xs text-gray-500'>
-                    <Link className='p-3 rounded-md bg-permanentLight' href={"/"}>Teacher&apos;s Classes</Link>
-                    <Link className='p-3 rounded-md bg-secondaryLight' href={"/"}>Teacher&apos;s Students</Link>
-                    <Link className='p-3 rounded-md bg-thirdLight' href={"/"}>Teacher&apos;s Lessons</Link>
-                    <Link className='p-3 rounded-md bg-pink-50' href={"/"}>Teacher&apos;s Exams</Link>
-                    <Link className='p-3 rounded-md bg-permanentLight' href={"/"}>Teacher&apos;s Assignments</Link>
+                    <Link className='p-3 rounded-md bg-permanentLight' href={"/"}>Student&apos;s Classes</Link>
+                    <Link className='p-3 rounded-md bg-secondaryLight' href={"/"}>Student&apos;s Students</Link>
+                    <Link className='p-3 rounded-md bg-thirdLight' href={"/"}>Student&apos;s Lessons</Link>
+                    <Link className='p-3 rounded-md bg-pink-50' href={"/"}>Student&apos;s Exams</Link>
+                    <Link className='p-3 rounded-md bg-permanentLight' href={"/"}>Student&apos;s Assignments</Link>
                 </div>
             </div>
             <Performance/>
