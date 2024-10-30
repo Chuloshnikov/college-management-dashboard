@@ -1,3 +1,4 @@
+import FormModal from "@/components/FormModal";
 import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
@@ -47,8 +48,8 @@ export default function AnnouncementsList() {
             <div className="flex items-center gap-2">
               {role === "admin" && (
                 <>
-                {/*  <FormModal table="announcement" type="update" data={item} />
-                  <FormModal table="announcement" type="delete" id={item.id} /> */}
+                <FormModal table="announcement" type="update" data={item} />
+                <FormModal table="announcement" type="delete" id={item.id} />
                 </>
               )}
             </div>
@@ -74,7 +75,7 @@ export default function AnnouncementsList() {
                   <Image src="/sort.png" alt="" width={14} height={14} />
                 </button>
                 {role === "admin" && (
-                 {/* <FormModal table="announcement" type="create" /> */}
+                 <FormModal table="announcement" type="create" />
                 )}
               </div>
             </div>
