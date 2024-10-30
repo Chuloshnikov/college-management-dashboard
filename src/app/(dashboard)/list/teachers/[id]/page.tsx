@@ -1,5 +1,6 @@
 import Announcements from '@/components/Announcements'
 import BigCalendar from '@/components/BigCalendar'
+import Performance from '@/components/Performance'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -135,6 +136,7 @@ export default function SingleTeacher() {
                     <Link className='p-3 rounded-md bg-permanentLight' href={"/"}>Teacher&apos;s Assignments</Link>
                 </div>
             </div>
+            <Performance/>
             <Announcements/>
         </div>
     </div>
